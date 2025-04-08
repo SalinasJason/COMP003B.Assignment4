@@ -1,3 +1,9 @@
+/*
+ * Author: Jason Salinas
+ * Course: COMP-003B-L01
+ * Faculty: Jonathan Cruz
+ * Purpose: 4.6 Coding Assignment: Mini-Project
+ */
 namespace COMP003B.Assignment4
 {
     public class Program
