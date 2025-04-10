@@ -18,7 +18,7 @@ namespace COMP003B.Assignment4.Controllers
         }
 
         [HttpGet("accessories")]
-        public IActionResult Accessroies()
+        public IActionResult Accessories()
         {
             return View();
         }
