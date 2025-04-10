@@ -1,0 +1,35 @@
+﻿﻿@{
+    ViewData["Title"] = "PS5 Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model COMP003B.Assignment4.Models.FormRegistration
+
+<!-- Create the form -->
+<h2>Register to buy a PS5</h2>
+<form asp-action="RegisterForm" method="post">
+    <div>
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="DiscountCode"></label>
+        <input asp-for="DiscountCode" class="form-control" />
+        <span asp-validation-for="DiscountCode" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
