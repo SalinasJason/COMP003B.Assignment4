@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using COMP003B.Assignment4.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace COMP003B.Assignment4.Controllers
 {
@@ -12,9 +13,18 @@ namespace COMP003B.Assignment4.Controllers
         }
 
         [HttpGet("games")]
-        public  IActionResult Games()
+        public IActionResult Games()
         {
-            return View();
+            var games = new List<Game>
+            {
+                new Game { Name = "God of War Ragnarok", Genre = "Action-adventure", Price = 59.99 },
+                new Game { Name = "Spider-Man", Genre = "Action", Price = 49.99 },
+                new Game { Name = "Elden Ring", Genre = "RPG", Price = 59.99 },
+                new Game { Name = "The Last of Us Part 1 ", Genre = "Action-adventure", Price = 59.99 },
+                new Game { Name = "Horizon Forbidden West", Genre = "Action-RPG", Price = 59.99 },
+                new Game { Name = "Ratchet & Clank Rift Apart", Genre = "Action-adventure", Price = 59.99 },
+            };
+            return View(games);
         }
 
         [HttpGet("accessories")]
