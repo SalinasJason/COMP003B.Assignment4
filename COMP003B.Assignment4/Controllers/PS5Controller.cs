@@ -2,22 +2,23 @@
 
 namespace COMP003B.Assignment4.Controllers
 {
+    [Route("PS5")]
     public class PS5Controller : Controller
     {
-        [HttpGet]
+        [HttpGet("home")]
         public IActionResult Home()
         {
             return View();
         }
 
-        [HttpGet]
+        [HttpGet("games")]
         public  IActionResult Games()
         {
             return View();
         }
 
-        [HttpGet]
-        public IActionResult Accessries()
+        [HttpGet("accessories")]
+        public IActionResult Accessroies()
         {
             return View();
         }
