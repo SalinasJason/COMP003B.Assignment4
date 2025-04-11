@@ -17,12 +17,12 @@ namespace COMP003B.Assignment4.Controllers
         {
             var games = new List<Game>
             {
-                new Game { Name = "God of War Ragnarok", Genre = "Action-adventure", Price = 59.99 },
-                new Game { Name = "Spider-Man", Genre = "Action", Price = 49.99 },
-                new Game { Name = "Elden Ring", Genre = "RPG", Price = 59.99 },
-                new Game { Name = "The Last of Us Part 1 ", Genre = "Action-adventure", Price = 59.99 },
-                new Game { Name = "Horizon Forbidden West", Genre = "Action-RPG", Price = 59.99 },
-                new Game { Name = "Ratchet & Clank Rift Apart", Genre = "Action-adventure", Price = 59.99 },
+                new Game { Name = "God of War Ragnarok", ImageUrl = "/Images/Game-God.jfif", Genre = "Action-adventure", Price = 59.99 },
+                new Game { Name = "Marvel Spider-Man 2", ImageUrl = "/Images/Game-Spider.jfif", Genre = "Action", Price = 59.99 },
+                new Game { Name = "Elden Ring", ImageUrl = "/Images/Game-Elden.jfif", Genre = "RPG", Price = 59.99 },
+                new Game { Name = "The Last of Us Part 1 ", ImageUrl = "/Images/Game-Last.jfif", Genre = "Action-adventure", Price = 59.99 },
+                new Game { Name = "Horizon Forbidden West", ImageUrl = "/Images/Game-Horizon.jfif", Genre = "Action-RPG", Price = 59.99 },
+                new Game { Name = "Ratchet & Clank Rift Apart", ImageUrl = "/Images/Game-Ratchet.jfif", Genre = "Action-adventure", Price = 59.99 },
             };
             return View(games);
         }
@@ -40,3 +40,4 @@ namespace COMP003B.Assignment4.Controllers
         }
     }
 }
+
