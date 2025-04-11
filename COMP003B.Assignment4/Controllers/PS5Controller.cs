@@ -30,7 +30,13 @@ namespace COMP003B.Assignment4.Controllers
         [HttpGet("accessories")]
         public IActionResult Accessories()
         {
-            return View();
+            var acessories = new List<Accessories>
+            {
+                new Accessories { Name = "DualSense Wireless Controller", ImageUrl = "/Images/PS5-Controller.webp", Price = 69.99 },
+                new Accessories { Name = "PULSE Elite wireless headset", ImageUrl = "/Images/PS5-Headset.webp", Price = 69.99 },
+                new Accessories { Name = "Internal M.2 SSD 2TB", ImageUrl = "/Images/PS5-ssd.webp", Price = 184.99 },
+            };
+            return View(acessories);
         }
     }
 }
