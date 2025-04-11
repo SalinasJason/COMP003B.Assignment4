@@ -28,6 +28,8 @@ namespace COMP003B.Assignment4
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseMiddleware<COMP003B.Assignment4.Middleware.RequestLoggingMiddleware>();
+
             app.UseRouting();
 
             app.UseAuthorization();
